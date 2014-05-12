@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="colorApp">
+<head>
+  <meta charset="utf-8">
+  <title>Colors picks powered by AngularJS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+</head>
+<body ng-controller="ColorListCtrl">
+<div id="container">
+<div id="header"> <p class="title">Type a color name or code: <input ng-model="query"></p>
+</div>
+
+<div id="post" ng-repeat="color in colors | filter:query">
+      <p class="color-name" ng-model="open">{{color.name}}</p>
+	  <details class="color-code" ng-open="open"><summary>Show/Hide codes</summary>{{color.hex}} | {{color.decimal}}</details>
+	  <img class="image-style" ng-src="{{color.imageUrl}}">
+  </div>
+</div>
+</body>
+</html>

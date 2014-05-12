@@ -1,0 +1,19 @@
+[
+	{
+	"age": "1",
+	"name": "White",
+	"imageUrl": "img/color/white.jpg",
+     "code": "#FFFFFF"
+	  },
+    {'age': '2',
+	'name': 'Orange',
+	"imageUrl": "img/color/orange.jpg",
+     'code': 'F2B233'
+	  },
+	 
+    {	'age': '3',
+	'name': 'Magenta',
+	"imageUrl": "img/color/magenta.jpg",
+     'code': '#E57FD8'
+	 }
+  ];
