@@ -1,5 +1,7 @@
 Angular-colorlist
 =================
+Demo: http://www.cedricpadolus.com/demos/angularjs/colorlist/
+
 
 A short app listing basic CSS colors name, hex and RGB codes.
 
